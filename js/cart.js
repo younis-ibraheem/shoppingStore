@@ -68,7 +68,7 @@ function removeFromcart(id) {
 
     localStorage.setItem(`addItemsToLs`, JSON.stringify(filtered));
 
-    window.location = `/shoppingCart.html`;
+    window.location = `shoppingCart.html`;
   }
 }
 
@@ -81,7 +81,7 @@ function preIncrement(id, price) {
       let quantity = element.qty--;
       element.newPrice -= price;
       localStorage.setItem(`addItemsToLs`, JSON.stringify(productIncart));
-      window.location = `/shoppingCart.html`;
+      window.location = `shoppingCart.html`;
     }
   });
 }
@@ -97,7 +97,7 @@ function increment(id, price) {
     }
   });
   localStorage.setItem(`addItemsToLs`, JSON.stringify(productIncart));
-  window.location = `/shoppingCart.html`;
+  window.location = `shoppingCart.html`;
 }
 
 //sum all prices
